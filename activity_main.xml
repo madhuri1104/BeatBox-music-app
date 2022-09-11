@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context=".MainActivity" >
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="388dp"
+        android:layout_height="118dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/name" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        app:columnCount="3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:rowCount="3">
+
+        <Button
+            android:id="@+id/button13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:height="100dp"
+            android:fontFamily="sans-serif-condensed"
+            android:onClick="soundPlayButton"
+            android:padding="10dp"
+            android:tag="0"
+            android:text="Flute"
+            android:textStyle="bold"
+            app:cornerRadius="20dp"
+            app:layout_column="0"
+            app:layout_row="0" />
+
+        <Button
+            android:id="@+id/button14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:height="100dp"
+            android:fontFamily="sans-serif-condensed"
+            android:onClick="soundPlayButton"
+            android:padding="10dp"
+            android:tag="1"
+            android:text="Dhol"
+            android:textStyle="bold"
+            app:cornerRadius="20dp"
+            app:layout_column="1"
+            app:layout_row="0" />
+
+        <Button
+            android:id="@+id/button15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:height="100dp"
+            android:fontFamily="sans-serif-condensed"
+            android:onClick="soundPlayButton"
+            android:padding="10dp"
+            android:tag="2"
+            android:text="guitar"
+            android:textStyle="bold"
+            app:cornerRadius="20dp"
+            app:layout_column="2"
+            app:layout_row="0" />
+
+        <Button
+            android:id="@+id/button20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:height="100dp"
+            android:fontFamily="sans-serif-condensed"
+            android:onClick="soundPlayButton"
+            android:padding="10dp"
+            android:tag="3"
+            android:text="Harmonica"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            app:cornerRadius="20dp" />
+
+        <Button
+            android:id="@+id/button21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:height="100dp"
+            android:fontFamily="sans-serif-condensed"
+            android:onClick="soundPlayButton"
+            android:padding="10dp"
+            android:tag="4"
+            android:text="piano"
+            android:textStyle="bold"
+            app:cornerRadius="20dp" />
+
+        <Button
+            android:id="@+id/button22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:height="100dp"
+            android:fontFamily="sans-serif-condensed"
+            android:onClick="soundPlayButton"
+            android:padding="10dp"
+            android:tag="5"
+            android:text="Sexophone"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            app:cornerRadius="20dp" />
+
+        <Button
+            android:id="@+id/button23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:height="100dp"
+            android:fontFamily="sans-serif-condensed"
+            android:onClick="soundPlayButton"
+            android:padding="10dp"
+            android:tag="6"
+            android:text="Sitar"
+            android:textStyle="bold"
+            app:cornerRadius="20dp" />
+
+        <Button
+            android:id="@+id/button24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:height="100dp"
+            android:fontFamily="sans-serif-condensed"
+            android:onClick="soundPlayButton"
+            android:padding="10dp"
+            android:tag="7"
+            android:text="Drum"
+            android:textStyle="bold"
+            app:cornerRadius="20dp" />
+
+        <Button
+            android:id="@+id/button25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:height="100dp"
+            android:fontFamily="sans-serif-condensed"
+            android:onClick="soundPlayButton"
+            android:padding="10dp"
+            android:tag="8"
+            android:text="violene"
+            android:textStyle="bold"
+            app:cornerRadius="20dp" />
+    </androidx.gridlayout.widget.GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
